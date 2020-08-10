@@ -4,6 +4,12 @@ body {
   box-sizing: border-box;
 }
 
+/* -------------------------------- Variables ------------------------------- */
+:root {
+  --main-color: #eb233c;
+}
+/* -------------------------------- Variables ------------------------------- */
+
 /* !----------------------------- Reusable Blocks ---------------------------- */
 .button {
   padding: 10px 30px;
@@ -31,10 +37,14 @@ body {
 
 /* !----------------------------- Reusable Blocks ---------------------------- */
 
+.text-red {
+  color: var(--main-color);
+}
+
 .section-hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("./img/background.jpg");
-  height: 70vh;
+  height: 75vh;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -42,9 +52,10 @@ body {
 }
 
 .section-hero__inner-container {
-  height: 70vh;
+  height: 75vh;
 }
 
 .section-services {
-  height: 1000px;
+  padding: 50px 0;
+  background: #fff;
 }
