@@ -141,5 +141,19 @@ body {
   background-position: center;
 }
 
+.section-about {
+  padding: 100px 0;
+  background: #fff;
+}
 
-.se
+.section-contact {
+  padding: 100px 0;
+  background: #f7f7f7;
+}
+
+.contact-form__input-box {
+  border: none;
+  border-bottom: 2px solid var(--main-color);
+  border-radius: 0;
+  background: #f7f7f7;
+}
