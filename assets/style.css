@@ -11,6 +11,11 @@ body {
 /* -------------------------------- Variables ------------------------------- */
 
 /* !----------------------------- Reusable Blocks ---------------------------- */
+.link,
+.link:hover {
+  text-decoration: none;
+}
+
 .button {
   padding: 10px 30px;
   border-radius: 20px;
@@ -29,12 +34,21 @@ body {
   background: transparent;
 }
 
+.button--red {
+  background: var(--main-color);
+  color: #fff;
+}
+
 .button--transparent:hover {
   background: #fff;
   color: #000;
   border: none;
 }
 
+.button--red:hover {
+  background: var(--main-color);
+  color: #fff;
+}
 /* !----------------------------- Reusable Blocks ---------------------------- */
 
 .text-red {
@@ -70,5 +84,48 @@ body {
 }
 
 .services-card__text-container {
-    padding: 10px;
+  padding: 10px;
+}
+
+.section-works {
+  padding: 50px 0;
+  background-color: #faf4fa;
+}
+
+.portfolio-card {
+  margin: 20px;
+}
+
+.portfolio-card__img-container {
+  position: relative;
+}
+
+.portfolio-card__img-overlay {
+  background: #eb233a32;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.portfolio-card:hover .portfolio-card__img-overlay {
+  opacity: 1;
+}
+
+.section-heading {
+  padding: 10px 0 20px 0;
+}
+
+.section-heading__title-main {
+  border-bottom: 2px solid red;
+  display: inline-block;
+  margin-bottom: -5px;
+  line-height: 0;
+}
+
+.section-heading {
+  line-height: 0;
 }
