@@ -59,3 +59,16 @@ body {
   padding: 50px 0;
   background: #fff;
 }
+
+.services-card__icon-item::before {
+  margin-left: 0;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 50%;
+  color: var(--main-color);
+  border: 1px solid#eaeaea;
+}
+
+.services-card__text-container {
+    padding: 10px;
+}
